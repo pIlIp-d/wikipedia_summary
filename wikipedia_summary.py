@@ -43,7 +43,7 @@ class Summarizer:
 
 
 def get_wiki_page(site_title: str) -> str:
-    return wikipedia.page(site_title).content
+    return wikipedia.page(site_title, auto_suggest=False).content
 
 
 def iterate_in_pairs(value_list: list):
